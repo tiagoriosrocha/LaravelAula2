@@ -29,6 +29,8 @@ Route::get('/mensagens', 'MensagemController@index');
 //rotas que serão liberadas somente para usuários logados
 Route::group(['middleware' => 'auth'], function(){
 	Route::get('/atividades/create', 'AtividadeController@create');
+	Route::get('/mensagens/create','MensagemController@create');
+	Route::post('/mensagens','MensagemController@store');
 	Route::get('/mensagens/{id}', 'MensagemController@show');	
 	Route::post('/atividades', 'AtividadeController@store');
 	Route::get('/atividades/{id}', 'AtividadeController@show');
