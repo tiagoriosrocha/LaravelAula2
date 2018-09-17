@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Atividade;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class AtividadeController extends Controller
 {
@@ -15,7 +16,7 @@ class AtividadeController extends Controller
      */
     public function index()
     {
-        $listaAtividades = Atividade::all();
+        $listaAtividades = Atividade::where('user_id', Auth::id() )->get();
         return view('atividade.list',['atividades' => $listaAtividades]);
     }
 

@@ -17,5 +17,11 @@ class usuarioTableSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin'),
         ]);
+
+        User::create([
+            'name' => 'Tiago',
+            'email' => 'tiago.rios@ibiruba.ifrs.edu.br',
+            'password' => bcrypt('tiago'),
+        ]);
     }
 }
