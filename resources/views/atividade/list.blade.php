@@ -10,6 +10,19 @@
   	</div>
   @endif
 
+  <!-- EXIBE MENSAGENS DE ERROS -->
+  @if ($errors->any())
+  <div class="container">
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+  </div>
+  @endif
+
 @foreach($atividades as $atividade)
 	<h3>Título: <b><a href="/atividades/{{$atividade->id}}">{{$atividade->title}}</a></b></h3>
   <p>Agendado para: <b>{{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</b></p>
