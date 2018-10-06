@@ -14,6 +14,5 @@
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet"></style>
 
-<!-- Datepicker -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
 
