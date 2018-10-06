@@ -27,5 +27,96 @@ class mensagemTableSeeder extends Seeder
             'user_id' => 1,
             'atividade_id' => 1
         ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
+        Mensagem::create([
+            'titulo' => 'Olá final',
+            'texto' => 'Olá mundo...final..',
+            'autor' => 'Maria',
+            'user_id' => 1,
+            'atividade_id' => 1
+        ]);
     }
 }

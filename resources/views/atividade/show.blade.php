@@ -1,17 +1,27 @@
-<h1>Atividades {{$atividade->id}}</h1>
-<hr>
-<h3><b>ID:</b> {{$atividade->id}}</h3>
-<h3><b>Título:</b> {{$atividade->title}}</h3>
-<h3><b>Agendado para:</b> {{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</h3>
-<h3><b>Descrição:</b> {{$atividade->description}}</h3>
-<h3><b>Criada em:</b> {{\Carbon\Carbon::parse($atividade->created_at)->format('d/m/Y h:m')}}</h3>
-<h3><b>Atualizada em:</b> {{\Carbon\Carbon::parse($atividade->updated_at)->format('d/m/Y h:m')}}</h3>
+@extends('layouts.app')
 
+@section('content')
+
+<div class="row">
+<p class="h2">Atividade ID:{{$atividade->id}}</p>
+</div>
+
+<div class="row">
+    <ul class="list-unstyled">
+        <li><p class="h5">Título: <b>{{$atividade->title}}</b></p></li>
+        <li><p class="h5">Agendado para: <b>{{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</b></p></li>
+        <li><p class="h5">Descrição: <b>{{$atividade->description}}</b></p></li>
+        <li>----</li>
+        <li><p class="h5">Criada em: <b>{{\Carbon\Carbon::parse($atividade->created_at)->format('d/m/Y h:m')}}</b></p></li>
+        <li><p class="h5">Atualizada em: <b>{{\Carbon\Carbon::parse($atividade->updated_at)->format('d/m/Y h:m')}}</b></p></li>
+    </ul>
+</div>
 
 <br>
 <br>
 
-<h1>Mensagens Relacionadas:</h1>
+<div class="row">
+<p class="h4">Mensagens Relacionadas:</p>
 <table id="tabela" name="tabela"  class="table table-striped ">
     <thead>
        <tr>
@@ -30,7 +40,8 @@
         @endforeach
     </tbody>
 </table>
-
+</div>
+@endsection
 
 
 

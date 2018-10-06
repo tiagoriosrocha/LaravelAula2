@@ -1,5 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Lista de Atividades</h1>
-<hr>
 
   <!-- EXIBE MENSAGENS DE SUCESSO -->
   @if(\Session::has('success'))
@@ -23,24 +25,32 @@
   </div>
   @endif
 
+<div class="container">
 @foreach($atividades as $atividade)
-	<h3>Título: <b><a href="/atividades/{{$atividade->id}}">{{$atividade->title}}</a></b></h3>
-  <p>Agendado para: <b>{{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</b></p>
-	<p>Descrição: <b>{{$atividade->description}}</b></p>
-  @auth
-    <p>Ações: 
-      <a href="/atividades/{{$atividade->id}}">Ver Mais</a>
-      <a href="/atividades/{{$atividade->id}}/edit">Editar</a> 
-      <a href="/atividades/{{$atividade->id}}/delete">Deletar</a>
-    </p>
-  @endauth
-	<br>
-@endforeach
+  <div class="row">
+	   <p class="h3"><a href="/atividades/{{$atividade->id}}">{{$atividade->title}}</a></p>
+     <p class="h5">Descrição: <b>{{$atividade->description}}</b></p>
+     <p class="h5">Agendado para: <b>{{\Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')}}</b></p>
 
-<br>
+      @auth
+        <p class="h5">Ações: 
+          <a href="/atividades/{{$atividade->id}}">Ver Mais</a>
+          <a href="/atividades/{{$atividade->id}}/edit">Editar</a> 
+          <a href="/atividades/{{$atividade->id}}/delete">Deletar</a>
+        </p>
+      @endauth
+  </div>
+  <br>
+@endforeach
+</div>
+
 
 @auth
+<div class="container">
+  <div class="row">
   <p><a href="/atividades/create">Criar novo registro</a></p>
+</div>
+</div>
 @endauth
 
-
+@endsection

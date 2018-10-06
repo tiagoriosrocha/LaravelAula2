@@ -4,9 +4,8 @@
 	<h3>{{$mensagem->autor}}</h3>
 	<p><a href="/mensagens/{{$mensagem->id}}">{{$mensagem->titulo}}</a></p>
 	<p>{{$mensagem->texto}}</p>
-	<br>
+	<hr>
 @endforeach
 
+{{ $mensagens->links() }}
 
-
-<!-- \Carbon\Carbon::parse($atividade->scheduledto)->format('d/m/Y h:m')  -->
