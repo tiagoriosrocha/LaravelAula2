@@ -4,17 +4,8 @@
 
 <title>Gerenciador de Atividades</title>
 
-<!-- load bootstrap from a cdn -->
-<!-- <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}"> -->
-
 <!-- load fontwesome -->
 <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
-
-<!-- CSRF Token -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
-
-<!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -22,3 +13,7 @@
 
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet"></style>
+
+<!-- Datepicker -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
