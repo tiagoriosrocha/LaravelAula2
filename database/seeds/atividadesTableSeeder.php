@@ -12,6 +12,9 @@ class atividadesTableSeeder extends Seeder
      */
     public function run()
     {
+        
+        factory('App\Atividade', 50)->create();
+
         Atividade::create([
             'title' => 'Prova de Matemática',
             'description' => 'Prova sobre números imaginários',
@@ -32,5 +35,7 @@ class atividadesTableSeeder extends Seeder
             'scheduledto' => '2018-10-01 13:15:00',
             'user_id' => 2
         ]);
+
+
     }
 }
